@@ -46,7 +46,7 @@ text-to-speech/
 ```bash
 git clone <REPO_URL>
 cd text-to-speech
-
+```
 ### 2️⃣ Construir y ejecutar con Docker Compose
 
 ```bash
@@ -54,14 +54,12 @@ docker compose up --build
 
 Frontend disponible en: http://localhost:8080
 Backend en: http://localhost:1234
-
+```
 ### 3️⃣ Usar imágenes desde Docker Hub (sin build local)
 Si quieres evitar construir localmente, usa las imágenes ya publicadas:
 
-docker-compose.yml mínimo:
-yaml
-Copiar
-Editar
+#### docker-compose.yml mínimo:
+```bash
 version: '3.8'
 
 services:
@@ -75,11 +73,11 @@ services:
     ports:
       - "8080:80"
     restart: unless-stopped
+```
 Comando:
-bash
-Copiar
-Editar
+```
 docker compose up
+```
 Docker descargará automáticamente las imágenes de Docker Hub.
 
 # 🐳 Imágenes en Docker Hub
