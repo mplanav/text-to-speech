@@ -15,7 +15,7 @@ Convierta texto en voz de forma sencilla mediante una aplicación web fullstack,
 ---
 
 ## 🗂️ Estructura del proyecto
-
+```bash
 text-to-speech/
 ├── back/
 │ ├── app.py
@@ -27,7 +27,7 @@ text-to-speech/
 │ ├── app.js
 │ └── Dockerfile
 └── docker-compose.yml
-
+```
 ---
 
 ## ⚙️ Tecnologías usadas
@@ -81,8 +81,10 @@ docker compose up
 Docker descargará automáticamente las imágenes de Docker Hub.
 
 # 🐳 Imágenes en Docker Hub
+```bash
 mplanav/voice-backend
 mplanav/voice-frontend
+```
 
 # 🔧 Variables de entorno
 No se requiere configuración de variables de entorno para este proyecto.
