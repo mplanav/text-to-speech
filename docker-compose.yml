@@ -1,0 +1,12 @@
+services:
+  backend:
+    image: marcdev/voice-backend:latest
+    ports: 
+      - "1234:1234"
+    restart: unless-stopped
+
+  frontend:
+    image: marcdev/voice-frontend:latest
+    ports:
+      - "8080:80"
+    restart: unless-stopped
